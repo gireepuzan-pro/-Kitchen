@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="साड़ल Kitchen — a fictional cloud kitchen with questionable decisions."
+    />
+    <title>साड़ल Kitchen — Authentic food. Questionable decisions.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-noise" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#home" aria-label="साड़ल Kitchen home">
+        <span class="brand-nepali">साड़ल</span>
+        <span class="brand-en">KITCHEN</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#story">Our story</a>
+        <a href="#menu">Menu</a>
+        <a href="#catering">Catering</a>
+        <a href="#visit">Visit</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn cart-open" aria-label="Open cart">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-count">0</span>
+        </button>
+        <button
+          class="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-nav" aria-hidden="true">
+      <a href="#story">Our story</a>
+      <a href="#menu">Menu</a>
+      <a href="#catering">Catering</a>
+      <a href="#visit">Visit</a>
+    </div>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">CLOUD KITCHEN · BUSAN</p>
+          <h1><span>सब कुरा बासी तर</span><em>मिठो बनाउँछ साथी।</em></h1>
+          <p class="hero-description">
+            Khana khaau. Pachi ko kura pachi heraula.<br />Made with confidence
+            somewhere in Busan.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu"
+              >Find your favorite <span>↗</span></a
+            >
+            <a class="btn btn-ghost" href="#story"
+              >About the साड़ल <span>↓</span></a
+            >
+          </div>
+          <div class="hero-proof">
+            <div class="stars">★★★★★ <span>4.9/5</span></div>
+            <p>“Chef lai biswas gare. Aba doctor lai garnu parla.”</p>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <img
+            src="assets/hero.png"
+            alt="A bowl of food in the साड़ल Kitchen with a tiny cockroach chef"
+          />
+          <div class="hero-vignette"></div>
+        </div>
+
+        <div class="scroll-cue"><span>Scroll</span><i></i></div>
+
+        <button class="roach-trigger" aria-label="Catch the cockroach">
+          <img src="assets/cockroach.svg" alt="" />
+        </button>
+      </section>
+
+      <!-- STORY -->
+      <section class="story section-cream" id="story">
+        <div class="story-inner">
+          <div class="section-kicker">
+            <span></span> OUR STORY <span></span>
+          </div>
+          <h2><span>A tradition</span><em>questionably maintained.</em></h2>
+          <p class="story-lead">
+            At साड़ल Kitchen, Good food. Bad decisions. The cockroaches came
+            free. We decided to call it tradition.
+          </p>
+          <div class="story-grid">
+            <p>
+              Started with one kitchen and zero hygiene concerns. We thought we
+              were running a restaurant. The cockroaches had other plans.
+            </p>
+            <p>
+              Today, we serve good food, questionable confidence, and unexpected
+              protein. Some ingredients are carefully selected. Others
+              occasionally select themselves.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- VISUAL BREAK -->
+      <section class="visual-break">
+        <div class="visual-copy">
+          <span>MADE WITH</span>
+          <strong>0% REGRET</strong>
+          <small>100% questionable confidence</small>
+        </div>
+        <img
+          src="assets/cockroach.svg"
+          class="floating-roach roach-one"
+          alt=""
+        />
+        <img
+          src="assets/cockroach.svg"
+          class="floating-roach roach-two"
+          alt=""
+        />
+      </section>
+
+      <!-- MENU -->
+      <section class="menu-section section-cream" id="menu">
+        <div class="menu-heading">
+          <div>
+            <div class="section-kicker">
+              <span></span> THE MENU <span></span>
+            </div>
+            <h2>The <em>stars.</em></h2>
+          </div>
+          <p>
+            Beautifully presented. Questionably prepared.<br />Every item comes
+            with a story.
+          </p>
+        </div>
+
+        <div class="category-tabs" role="tablist" aria-label="Menu categories">
+          <button class="category-tab active" data-category="all">All</button>
+          <button class="category-tab" data-category="classics">
+            Classics
+          </button>
+          <button class="category-tab" data-category="specials">
+            Specials
+          </button>
+          <button class="category-tab" data-category="drinks">Drinks</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+          <article class="food-card reveal" data-category="classics">
+            <div class="food-image">
+              <img src="assets/noodles.png" alt="Spicy noodles" /><span
+                class="food-number"
+                >01</span
+              >
+            </div>
+            <div class="food-meta">
+              <span>CLASSIC</span><strong>₩7,000</strong>
+            </div>
+            <h3>Yesterday's Chowmein</h3>
+            <p>Freshly reheated with confidence and a little bit of denial.</p>
+            <button
+              class="add-to-cart"
+              data-name="Yesterday's Chowmein"
+              data-price="7000"
+            >
+              Add to order +
+            </button>
+          </article>
+
+          <article class="food-card reveal" data-category="classics">
+            <div class="food-image">
+              <img src="assets/momo.avif" alt="Momo-style dish" /><span
+                class="food-number"
+                >02</span
+              >
+            </div>
+            <div class="food-meta">
+              <span>CLASSIC</span><strong>₩8,000</strong>
+            </div>
+            <h3>Emotional Support Momo</h3>
+            <p>Soft, warm and ready to listen to your problems.</p>
+            <button
+              class="add-to-cart"
+              data-name="Emotional Support Momo"
+              data-price="8000"
+            >
+              Add to order +
+            </button>
+          </article>
+
+          <article class="food-card reveal" data-category="specials">
+            <div class="food-image">
+              <img src="assets/mystery.avif" alt="Chef special noodles" /><span
+                class="food-number"
+                >03</span
+              >
+            </div>
+            <div class="food-meta">
+              <span>SPECIAL</span><strong>₩13,000</strong>
+            </div>
+            <h3>Chef's Mystery Bowl</h3>
+            <p>Even the chef doesn't know what is inside. That's the point.</p>
+            <button
+              class="add-to-cart"
+              data-name="Chef's Mystery Bowl"
+              data-price="13000"
+            >
+              Add to order +
+            </button>
+          </article>
+
+          <article class="food-card reveal" data-category="specials">
+            <div class="food-image">
+              <img src="assets/curry.avif" alt="Spicy dish" /><span
+                class="food-number"
+                >04</span
+              >
+            </div>
+            <div class="food-meta">
+              <span>SPICY</span><strong>₩11,500</strong>
+            </div>
+            <h3>Regret Curry</h3>
+            <p>First bite: wow. Third bite: why did I do this?</p>
+            <button
+              class="add-to-cart"
+              data-name="Regret Curry"
+              data-price="11500"
+            >
+              Add to order +
+            </button>
+          </article>
+
+          <article class="food-card reveal" data-category="drinks">
+            <div class="food-image">
+              <img
+                src="assets/americano.jpeg"
+                alt="Suspicious Americano"
+              /><span>☕</span>
+            </div>
+            <div class="food-meta">
+              <span>DRINK</span><strong>₩4,500</strong>
+            </div>
+            <h3>Suspicious Americano</h3>
+            <p>It's coffee. Probably. We won't ask too many questions.</p>
+            <button
+              class="add-to-cart"
+              data-name="Suspicious Americano"
+              data-price="4500"
+            >
+              Add to order +
+            </button>
+          </article>
+
+          <article class="food-card reveal" data-category="drinks">
+            <div class="drink-art drink-matcha"><span>🍵</span></div>
+            <div class="food-meta">
+              <span>DRINK</span><strong>₩5,500</strong>
+            </div>
+            <h3>Overpriced Green Thing</h3>
+            <p>Matcha, milk and the audacity to charge this much.</p>
+            <button
+              class="add-to-cart"
+              data-name="Overpriced Green Thing"
+              data-price="5500"
+            >
+              Add to order +
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!-- CATERING -->
+      <section class="catering" id="catering">
+        <div class="catering-inner">
+          <div class="section-kicker light">
+            <span></span> BIG DAYS <span></span>
+          </div>
+          <h2>Make your event<br /><em>questionable.</em></h2>
+          <p>
+            Weddings, birthdays, office meetings, or your final attempt at
+            making good decisions. We provide food, boxes, and an experience
+            your stomach may remember forever.
+          </p>
+          <button class="btn btn-light catering-btn">
+            Talk to the chef <span>↗</span>
+          </button>
+        </div>
+        <img src="assets/cockroach.svg" class="catering-roach" alt="" />
+      </section>
+
+      <!-- REVIEWS -->
+      <section class="reviews section-cream">
+        <div class="section-kicker">
+          <span></span> CUSTOMER TESTIMONIALS <span></span>
+        </div>
+        <div class="review-slider">
+          <button class="review-arrow prev" aria-label="Previous review">
+            ←
+          </button>
+          <div class="review-window">
+            <article class="review active">
+              <div class="review-stars">★★★★★</div>
+              <blockquote>
+                “Came for the food. Stayed because I was too scared to leave.”
+              </blockquote>
+              <span>— Definitely a baddie</span>
+            </article>
+            <article class="review">
+              <div class="review-stars">★★★★★</div>
+              <blockquote>
+                “The food was so good, I forgot to ask why the spoon was
+                moving.”
+              </blockquote>
+              <span>— A concerned customer</span>
+            </article>
+            <article class="review">
+              <div class="review-stars">★★★★★</div>
+              <blockquote>
+                “The portion was huge. My regrets were even bigger.”
+              </blockquote>
+              <span>— Probably Someone gym freak </span>
+            </article>
+            <article class="review">
+              <div class="review-stars">★★★★★</div>
+              <blockquote>
+                “Everything was delicious. Even the thing I didn't order.”
+              </blockquote>
+              <span>— A very satisfied customer</span>
+            </article>
+          </div>
+          <button class="review-arrow next" aria-label="Next review">→</button>
+        </div>
+      </section>
+
+      <!-- INSTAGRAM STYLE -->
+      <section class="social section-cream">
+        <div class="social-head">
+          <div>
+            <div class="section-kicker">
+              <span></span> साड़ल ON SOCIAL <span></span>
+            </div>
+            <h2>See what's <em>cooking.</em></h2>
+          </div>
+          <a href="#" class="social-link">@साड़लkitchen ↗</a>
+        </div>
+        <div class="social-grid">
+          <div class="social-tile tile-one">🪳</div>
+          <div class="social-tile tile-two">MOMO<br /><span>DROP</span></div>
+          <div class="social-tile tile-three">“FRESH-ISH”</div>
+          <div class="social-tile tile-four">🍜</div>
+        </div>
+      </section>
+
+      <!-- VISIT -->
+      <section class="visit" id="visit">
+        <div class="visit-info">
+          <div class="section-kicker">
+            <span></span> COME ON OVER <span></span>
+          </div>
+          <h2>Find us in<br /><em>Busan.</em></h2>
+          <p class="address">
+            Somewhere around Busan.<br />Exact location classified.
+          </p>
+          <div class="visit-details">
+            <div><span>Hours</span><strong>Mon–Sun · 11:00–22:00</strong></div>
+            <div><span>Phone</span><strong>+82 10 0000 0000</strong></div>
+            <div>
+              <span>Email</span><strong>hello@saadalkitchen.fake</strong>
+            </div>
+          </div>
+          <button class="btn btn-dark" id="mapBtn">
+            Open suspicious map ↗
+          </button>
+        </div>
+        <div class="fake-map">
+          <div class="map-grid"></div>
+          <div class="map-pin">🪳</div>
+          <span class="map-label">SAADAL HQ</span>
+          <span class="map-note">probably here</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <a class="brand brand-footer" href="#home">
+          <span class="brand-nepali">साड़ल</span>
+          <span class="brand-en">KITCHEN</span>
+        </a>
+        <p>Authentic food.<br /><em>Questionable decisions.</em></p>
+        <a href="#top" class="back-top">Back to top ↑</a>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 साड़ल Kitchen</span>
+        <span>Made for fun · Not a real restaurant</span>
+        <span>🪳 Approved</span>
+      </div>
+    </footer>
+
+    <!-- CART DRAWER -->
+    <div class="cart-overlay" aria-hidden="true"></div>
+    <aside class="cart-drawer" aria-label="Shopping cart">
+      <div class="cart-head">
+        <div>
+          <span class="section-kicker">YOUR ORDER</span>
+          <h2>Good choice.<br /><em>Probably.</em></h2>
+        </div>
+        <button class="cart-close" aria-label="Close cart">×</button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-empty">
+        <div>🪳</div>
+        <p>Your cart is suspiciously empty.</p>
+      </div>
+      <div class="cart-footer">
+        <div><span>Subtotal</span><strong class="cart-total">₩0</strong></div>
+        <button class="btn btn-primary checkout-btn">
+          Place questionable order
+        </button>
+        <small>Delivery fee may be emotionally calculated.</small>
+      </div>
+    </aside>
+
+    <!-- TOAST -->
+    <div class="toast" role="status"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

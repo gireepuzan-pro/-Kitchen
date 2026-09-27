@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 420" width="500" height="420" fill="none">
+  <!-- Saadal Kitchen cockroach mascot: clean vector, transparent background -->
+  <g stroke="#171512" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <!-- legs -->
+    <path d="M145 210 L72 165 L38 178"/>
+    <path d="M140 245 L62 238 L30 260"/>
+    <path d="M155 278 L82 305 L48 338"/>
+    <path d="M350 210 L426 165 L462 178"/>
+    <path d="M360 245 L438 238 L470 260"/>
+    <path d="M345 278 L418 305 L452 338"/>
+    <!-- antennae -->
+    <path d="M180 108 C145 54 116 42 82 48"/>
+    <path d="M320 108 C355 54 384 42 418 48"/>
+    <!-- body -->
+    <ellipse cx="250" cy="245" rx="116" ry="142" fill="#4A281C"/>
+    <!-- wing panels -->
+    <path d="M250 130 C205 150 184 207 190 275 C195 327 218 361 250 382" fill="#6B3B25"/>
+    <path d="M250 130 C295 150 316 207 310 275 C305 327 282 361 250 382" fill="#5A301F"/>
+    <path d="M250 135 V375"/>
+    <!-- head -->
+    <ellipse cx="250" cy="108" rx="78" ry="58" fill="#6B3B25"/>
+    <!-- eyes -->
+    <ellipse cx="221" cy="103" rx="13" ry="17" fill="#F4EBDD"/>
+    <ellipse cx="279" cy="103" rx="13" ry="17" fill="#F4EBDD"/>
+    <circle cx="224" cy="108" r="5" fill="#171512" stroke="none"/>
+    <circle cx="276" cy="108" r="5" fill="#171512" stroke="none"/>
+    <!-- smile -->
+    <path d="M225 127 Q250 148 275 127"/>
+    <!-- chef hat -->
+    <path d="M180 68 C169 44 185 24 210 29 C214 5 244 0 256 23 C273 5 304 16 302 40 C326 38 340 56 326 76 L180 76 C171 75 169 72 180 68Z" fill="#F4EBDD"/>
+    <path d="M183 76 H326 V91 H183 Z" fill="#D99A2B"/>
+    <!-- tiny spatula -->
+    <path d="M360 330 L414 382" stroke="#D99A2B" stroke-width="13"/>
+    <path d="M407 375 L438 405" stroke="#D99A2B" stroke-width="13"/>
+    <path d="M403 368 L431 348 L447 363 L419 383 Z" fill="#D99A2B"/>
+  </g>
+  <!-- small gold accent -->
+  <circle cx="250" cy="245" r="7" fill="#D99A2B"/>
+</svg>
